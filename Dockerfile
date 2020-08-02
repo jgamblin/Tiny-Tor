@@ -2,7 +2,7 @@ FROM alpine:edge
 
 RUN echo '@testing http://nl.alpinelinux.org/alpine/edge/testing' \
     >> /etc/apk/repositories && \
-    apk --update add tor@testing runit@testing
+    apk --update add tor@testing runit@testing --no-cache
 
 COPY service /etc/service/
 COPY torrc /etc/tor/torrc
