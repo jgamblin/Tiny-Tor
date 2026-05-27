@@ -1,4 +1,4 @@
-FROM alpine:3.21
+FROM alpine:3.23.4
 
 LABEL org.opencontainers.image.source="https://github.com/jgamblin/Tiny-Tor"
 LABEL org.opencontainers.image.description="Lightweight Tor SOCKS5 proxy on Alpine Linux"
